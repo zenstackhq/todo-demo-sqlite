@@ -12,6 +12,9 @@
         "db:migrate": "zenstack migrate dev",
         "db:reset": "zenstack migrate reset"
     },
+    "stackblitz": {
+        "startCommand": "npm run generate && npm run db:push && npm run dev"
+    },
     "dependencies": {
         "@heroicons/react": "^2.0.12",
         "@prisma/client": "^4.4.0",
