@@ -7,15 +7,10 @@
         "build": "npm run generate && next build",
         "start": "next start",
         "lint": "next lint",
+        "generate": "zenstack generate",
         "db:push": "zenstack db push",
         "db:migrate": "zenstack migrate dev",
-        "db:deploy": "zenstack migrate deploy",
-        "db:reset": "zenstack migrate reset",
-        "db:browse": "zenstack studio",
-        "generate": "zenstack generate",
-        "vercel-build": "npm run build && npm run db:deploy",
-        "deps-local": "npm i -D ../../packages/schema && npm i ../../packages/internal ../../packages/runtime",
-        "deps-npm": "npm i -D zenstack@latest && npm i @zenstackhq/internal@latest @zenstackhq/runtime@latest"
+        "db:reset": "zenstack migrate reset"
     },
     "dependencies": {
         "@heroicons/react": "^2.0.12",
